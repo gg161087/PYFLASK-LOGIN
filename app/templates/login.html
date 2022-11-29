@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block content %}
+    <STYLE type="text/css">
+        .header {display: none;}
+    </STYLE>
+    <div class="login-box">
+        <h2>Iniciar sesión</h2>        
+        {{ render_form(loginForm) }}              
+    </div>    
+{% endblock %}
